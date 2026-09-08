@@ -59,8 +59,14 @@ p{margin:0 0 1em}
 .section{padding:84px 0}
 .section.dark{background:var(--navy);color:#fff}
 .section.dark h2,.section.dark h3{color:#fff}
-.two-col{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:center}
+.two-col{display:grid;grid-template-columns:1.05fr 1fr;gap:56px;align-items:start}
+#about .two-col figure{position:sticky;top:90px}
 .two-col figure{margin:0;border-radius:18px;overflow:hidden;box-shadow:0 20px 50px rgba(10,27,46,.18)}
+.definition{background:var(--bg2);border-left:4px solid var(--teal);border-radius:0 14px 14px 0;padding:18px 22px;margin:0 0 1.2em}
+.definition p{margin:0;font-size:1.05rem}
+.scope{padding-left:1.3em;margin:0 0 1.2em}
+.scope li{margin-bottom:.6em;font-size:.97rem}
+.scope li strong{color:var(--navy2)}
 .checks{list-style:none;padding:0;margin:1em 0}
 .checks li{position:relative;padding-left:1.7em;margin-bottom:.5em}
 .checks li::before{content:"";position:absolute;left:0;top:.55em;width:.9em;height:.9em;border-radius:50%;background:var(--teal);box-shadow:0 0 0 4px rgba(0,209,193,.18)}
@@ -108,6 +114,7 @@ p{margin:0 0 1em}
   .grid3{grid-template-columns:1fr}
   .two-col,.feature,.contact-grid{grid-template-columns:1fr}
   .two-col figure{order:-1}
+  #about .two-col figure{position:static}
 }
 @media (max-width:700px){
   body{font-size:16px}
