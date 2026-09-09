@@ -84,6 +84,22 @@ p{margin:0 0 1em}
 .chips{list-style:none;padding:0;margin:0;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
 .chips li{background:var(--bg2);border:1px solid var(--line);border-radius:999px;padding:.45em 1.1em;font-size:.92rem;color:var(--navy2)}
 
+/* training & speaking */
+.training{background:var(--bg2)}
+.speaker-highlight{display:grid;grid-template-columns:1fr 1fr;gap:32px;background:var(--navy);color:#fff;border-radius:20px;padding:32px;margin-bottom:2.5rem}
+.speaker-highlight h3{color:#fff;font-size:1.25rem}
+.speaker-highlight p{color:#c2cfde;margin:0}
+.speaker-highlight .eyebrow{margin-bottom:.6em}
+.speaker-highlight .checks{margin:0}
+.speaker-highlight .checks li{color:#dbe5f0;font-size:.95rem}
+.grid-course{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.course{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 24px;box-shadow:0 6px 20px rgba(10,27,46,.05);display:flex;flex-direction:column}
+.course h3{font-size:1.05rem;color:var(--navy2)}
+.course p{font-size:.95rem;color:var(--muted)}
+.course-for{font-size:.9rem!important;color:var(--ink)!important}
+.course-price{margin:auto 0 0!important;padding-top:.8em;border-top:1px solid var(--line);color:var(--navy2)!important;font-weight:600;font-size:.92rem!important}
+.training-cta{margin:2.5rem 0 0}
+
 /* contact */
 .contact{background:var(--bg2)}
 .contact-grid{display:grid;grid-template-columns:1fr 1.3fr;gap:40px;align-items:start}
@@ -107,7 +123,8 @@ p{margin:0 0 1em}
   .grid5{grid-template-columns:repeat(3,1fr)}
   .grid4{grid-template-columns:repeat(2,1fr)}
   .grid3{grid-template-columns:1fr}
-  .two-col,.feature,.contact-grid{grid-template-columns:1fr}
+  .two-col,.feature,.contact-grid,.speaker-highlight{grid-template-columns:1fr}
+  .grid-course{grid-template-columns:repeat(2,1fr)}
   .two-col figure{order:-1}
   #about .two-col figure{position:static}
 }
@@ -121,6 +138,8 @@ p{margin:0 0 1em}
   .menu{display:none;position:absolute;top:68px;left:0;right:0;background:var(--navy);flex-direction:column;padding:18px 24px;gap:1em;border-top:1px solid rgba(255,255,255,.1)}
   .menu.open{display:flex}
   .logo img{height:34px}
+  .grid-course{grid-template-columns:1fr}
+  .speaker-highlight{padding:22px}
   .pillar-strip{gap:1.2em}
   .feature{padding:18px}
 }
