@@ -86,18 +86,22 @@ p{margin:0 0 1em}
 
 /* training & speaking */
 .training{background:var(--bg2)}
-.speaker-highlight{display:grid;grid-template-columns:1fr 1fr;gap:32px;background:var(--navy);color:#fff;border-radius:20px;padding:32px;margin-bottom:2.5rem}
+.speaker-highlight{display:grid;grid-template-columns:1.1fr 1fr .75fr;gap:32px;align-items:start;background:var(--navy);color:#fff;border-radius:20px;padding:32px;margin-bottom:2.5rem}
 .speaker-highlight h3{color:#fff;font-size:1.25rem}
 .speaker-highlight p{color:#c2cfde;margin:0}
 .speaker-highlight .eyebrow{margin-bottom:.6em}
 .speaker-highlight .checks{margin:0}
 .speaker-highlight .checks li{color:#dbe5f0;font-size:.95rem}
 .grid-course{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.course{background:#fff;border:1px solid var(--line);border-radius:16px;padding:26px 24px;box-shadow:0 6px 20px rgba(10,27,46,.05);display:flex;flex-direction:column}
-.course h3{font-size:1.05rem;color:var(--navy2)}
+.course{background:#fff;border:1px solid var(--line);border-radius:16px;box-shadow:0 6px 20px rgba(10,27,46,.05);display:flex;flex-direction:column;overflow:hidden}
+.course>img{width:100%;aspect-ratio:16/10;object-fit:cover;background:var(--bg2)}
+.course h3,.course p{padding:0 24px}
+.course h3{font-size:1.05rem;color:var(--navy2);margin-top:22px}
 .course p{font-size:.95rem;color:var(--muted)}
 .course-for{font-size:.9rem!important;color:var(--ink)!important}
-.course-price{margin:auto 0 0!important;padding-top:.8em;border-top:1px solid var(--line);color:var(--navy2)!important;font-weight:600;font-size:.92rem!important}
+.course-price{margin:auto 24px 22px!important;padding:.8em 0 0!important;border-top:1px solid var(--line);color:var(--navy2)!important;font-weight:600;font-size:.92rem!important}
+.poster{margin:0;border-radius:14px;overflow:hidden;background:#fff}
+.poster img{width:100%;height:auto}
 .training-cta{margin:2.5rem 0 0}
 
 /* contact */
@@ -125,6 +129,7 @@ p{margin:0 0 1em}
   .grid3{grid-template-columns:1fr}
   .two-col,.feature,.contact-grid,.speaker-highlight{grid-template-columns:1fr}
   .grid-course{grid-template-columns:repeat(2,1fr)}
+  .poster{max-width:380px;justify-self:center}
   .two-col figure{order:-1}
   #about .two-col figure{position:static}
 }
